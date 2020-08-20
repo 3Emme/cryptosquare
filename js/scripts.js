@@ -10,7 +10,10 @@ function cryptosquare (initialText){
       nospaceArray.push(letter)
     }
   });
-  console.log(nospaceArray);   
+  console.log(nospaceArray); 
+  let arrayLength = nospaceArray.length;
+  console.log(arrayLength)
+  
 }
 
 

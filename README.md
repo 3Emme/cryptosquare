@@ -11,7 +11,8 @@ This program will take a message from the user and arange the letters in to a sq
 ## Specs
 * [X] Store a message from the user as an array with each letter as its own element 
 * [X] Remove spaces from the array 
-* [] Count how many characters are in the array and figure out how many "rows and columns" are needed
+* [X] Count how many characters are in the array 
+* [] Figure out how many "rows and columns" are needed
 * [] Build the "grid" and fill in the characters 
 * [] Obtain coded message by reading down the columns from left to right, joining text in groups of five. 
 * [] Output the coded message to the user 
