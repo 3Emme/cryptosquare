@@ -13,13 +13,15 @@ function cryptosquare (initialText){
   console.log(nospaceArray); 
   let arrayLength = nospaceArray.length;
   console.log(arrayLength)
-  
+  rowsColumns(arrayLength)
 }
 
-
-
-
-
+function rowsColumns(length) {  
+  let square = Math.sqrt(length)
+  console.log(square)
+  console.log( columns = Math.ceil(square))
+  console.log( rows = Math.floor(square))
+}
 
 
 
