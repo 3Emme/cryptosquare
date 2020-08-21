@@ -2,3 +2,12 @@ body {
   background-color: black;
   color: white;
 }
+
+#userArray {
+  color: white
+}
+
+#crypto-form {
+  margin: auto;
+  width: 90%;
+}

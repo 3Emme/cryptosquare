@@ -1,5 +1,4 @@
-
-// BUsiness Logic 
+// Business Logic 
 function cryptosquare (initialText){  
   const arrayText = initialText.split("");  
   let nospaceArray = [];
@@ -9,7 +8,7 @@ function cryptosquare (initialText){
     }
   });   
   let arrayLength = nospaceArray.length;  
-  rowsColumns(arrayLength,nospaceArray)
+  return rowsColumns(arrayLength,nospaceArray)
 }
 
 function rowsColumns(length,arrayText) {  
@@ -23,9 +22,8 @@ function rowsColumns(length,arrayText) {
         cryptoArray.push(arrayText[index2])      
       } 
     } indexMod += 1;
-  }
-  console.log(cryptoArray)
-  group(cryptoArray,arrayText)
+  }  
+  return group(cryptoArray,arrayText)
 } 
 
 function group(array,arrayText){
@@ -36,13 +34,14 @@ function group(array,arrayText){
     
     finalArray.push(firstFive.join(""))
   }
-  console.log(finalArray.join(" "))
+  return finalArray.join(" ")
 }
 
 // Interface Logic
 $(document).ready(function(){  
   $("form#crypto-form").submit(function(event){
     event.preventDefault();
-    cryptosquare($("#string").val())
+    $("#original").text($("#string").val());
+    $("#result").text(cryptosquare($("#string").val()));
   })
 });
