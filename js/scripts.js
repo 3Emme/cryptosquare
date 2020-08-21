@@ -41,6 +41,7 @@ function group(array,arrayText){
 $(document).ready(function(){  
   $("form#crypto-form").submit(function(event){
     event.preventDefault();
+    $("#userArray").show();
     $("#original").text($("#string").val());
     $("#result").text(cryptosquare($("#string").val()));
   })
